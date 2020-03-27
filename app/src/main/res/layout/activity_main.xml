@@ -7,21 +7,21 @@
     tools:context=".MainActivity">
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/loginField"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
         android:ems="10"
         android:hint="@string/enter_e_mail_here"
         android:inputType="textEmailAddress"
-        app:layout_constraintBottom_toTopOf="@id/editText2"
+        app:layout_constraintBottom_toTopOf="@id/passwordField"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_chainStyle="packed" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/passwordField"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginBottom="32dp"
@@ -31,7 +31,7 @@
         app:layout_constraintBottom_toTopOf="@id/button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText" />
+        app:layout_constraintTop_toBottomOf="@+id/loginField" />
 
     <Button
         android:id="@+id/button"
@@ -41,5 +41,5 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText2" />
+        app:layout_constraintTop_toBottomOf="@+id/passwordField" />
 </androidx.constraintlayout.widget.ConstraintLayout>
