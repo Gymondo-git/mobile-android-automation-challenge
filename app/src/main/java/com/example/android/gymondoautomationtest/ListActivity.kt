@@ -115,7 +115,13 @@ class ListActivity : AppCompatActivity() {
         }
 
         override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-            holder.textView.text = dataSet[position]
+            //holder.textView.text = dataSet[position]
+            // Set content description using the same text as
+            // the cell so we can have a unique locator to match during test.
+            dataSet[position].run {
+                holder.textView.text = this
+                holder.textView.contentDescription = this
+            }
         }
 
         override fun getItemCount() = dataSet.size
