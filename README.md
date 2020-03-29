@@ -1,14 +1,7 @@
 # qa-automation-android-test
 
-### Setup:
-  1) Install Android Studio as described [here](https://developer.android.com/studio/install)
-  
-  2) [Fork](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository) the repository to local.
-  
-  3) Open the repository in Android Studio and build the application. You can choose to build it on a physical device or an emulator.
+### How to Run the Test Suite:
 
-### Additional Info:
-   **Username**: automation@gymondo.de
-   
-   **Password**: automation
-
+    1) Make sure you have either an emulator booted or a physical device connected to your computer and set up for development
+    2) On project's root folder, run `./gradlew connectedAndroidTest`
+    3) Profit!
